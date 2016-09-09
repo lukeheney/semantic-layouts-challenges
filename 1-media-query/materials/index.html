@@ -5,10 +5,35 @@
 		<title>Box Model</title>
 		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		<style type="text/css">
+
+		  @media screen and (min-width: 400px){   /* min-width for desktop */
+         p{
+                 font-size: 20px;
+ 
+            }
+            .box{
+                  text-align: left;
+                  background-color: violet;
+                  border-color: white;
+            }
+
 		body{
 			background-image: url(img/code.jpg);
 			background-size: cover;
 		}
+
+			@media screen and (max-width: 1000px){   
+         p{
+                 font-size: 20px;
+ 
+            }
+            .box{
+                  text-align: left;
+                  background-color: violet;
+                  border-color: white;
+                  border: 1px solid grey;
+                  color: white;
+            }
 
 			#container
 			{
@@ -29,7 +54,7 @@
 				margin-bottom: 10px;
 				border-radius: 10px;
 				font-family: Roboto;
-				font-size: 20px;
+				font-size: 15px;
 				text-align: center;
 				padding: 30px 0;
 			}
