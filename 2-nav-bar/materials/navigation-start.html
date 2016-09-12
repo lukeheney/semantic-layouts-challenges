@@ -5,16 +5,64 @@
 		<title>My Nav</title>
 		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="reset.css">
+
 		<style type="text/css">
+
+		@media screen and (min-width: 665px) {
+		    nav {
+		        font-size: 0;  /* remove spacing issue*/
+    }
+		    nav ul li {
+		        display: inline-block;
+		        width: 120px;
+		        font-size: 20px;   /* insure font size not 0 */
+		        border-bottom: none;
+   }
+}
 
 		body {
 		  background-color: #292E37;
-		}
+}
+
+		nav ul li a {
+				     display: block;
+				     text-decoration: none;
+				     font-family: roboto;
+				     color: #fff;6. 
+}
+
+		nav ul {
+			     list-style: none;
+			     text-align: center;4.  
+}
+
+		nav ul li {
+				     font-size: 30px;
+				     border-bottom: 1px dotted #444;
+				     padding: 10px 5px;
+				     background-color: #292E37;
+}
+
+		nav ul li:hover {
+					     background-color: #555;
+					     transition: all 1s ease;
+}
 
 		</style>
+
 	</head>
 
 	<body>
+
+	<nav>
+	  <ul>
+	     <li><a href="#">Home</a></li>
+	     <li><a href="#">About</a></li>
+	     <li><a href="#">Portfolio</a></li>
+	     <li><a href="#">Blog</a></li>
+	     <li><a href="#">Contact</a></li>
+	  </ul>
+	</nav>
 
 	</body>
 </html>
